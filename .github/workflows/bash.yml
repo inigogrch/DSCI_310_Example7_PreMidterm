@@ -16,3 +16,14 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
+
+      - name: Run a command manually
+        uses: ls -a
+
+      - name: Run multiple commands manually
+        uses: 
+          pwd
+          ls -a
+
+      - name: Run multiple commands manually
+        uses: bash scripts/bash.sh
