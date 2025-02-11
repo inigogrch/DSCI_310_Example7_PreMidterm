@@ -18,12 +18,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run a command manually
-        uses: ls -a
+        run: ls -a
 
       - name: Run multiple commands manually
-        uses: 
+        run: 
           pwd
           ls -a
 
       - name: Run multiple commands manually
-        uses: bash scripts/bash.sh
+        run: bash scripts/bash.sh
